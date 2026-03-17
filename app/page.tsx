@@ -7,6 +7,7 @@ import Marquee from "../components/Marquee";
 import About from "../components/About";
 import Products from "../components/Products";
 import Benefits from "../components/Benefits";
+import Comparison from "../components/Comparison";
 import Process from "../components/Process";
 import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
@@ -63,6 +64,7 @@ export default function Home() {
             <About />
             <Products onOpenModal={() => setIsModalOpen(true)} />
             <Benefits />
+            <Comparison />
             <Process onOpenModal={() => setIsModalOpen(true)} />
             <Testimonials />
             <FAQ />
