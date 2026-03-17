@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Inter, Poppins, Montserrat, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
@@ -14,6 +14,20 @@ const poppins = Poppins({
     subsets: ["latin"],
     weight: ["300", "400", "500", "600", "700", "800"],
     variable: "--font-poppins",
+    display: 'swap',
+});
+
+const montserrat = Montserrat({
+    subsets: ["latin"],
+    weight: ["400", "700", "800"],
+    variable: "--font-montserrat",
+    display: 'swap',
+});
+
+const robotoCondensed = Roboto_Condensed({
+    subsets: ["latin"],
+    weight: ["400", "700"],
+    variable: "--font-roboto-condensed",
     display: 'swap',
 });
 
@@ -76,10 +90,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="ms" className={`scroll-smooth ${inter.variable} ${poppins.variable}`}>
+        <html lang="ms" className={`scroll-smooth ${inter.variable} ${poppins.variable} ${montserrat.variable} ${robotoCondensed.variable}`}>
             <head>
                 {/* Google Tag Manager */}
-                <script
+                <Script
+                    id="gtm"
+                    strategy="afterInteractive"
                     dangerouslySetInnerHTML={{
                         __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -91,7 +107,6 @@ export default function RootLayout({
                 {/* End Google Tag Manager */}
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
                 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
