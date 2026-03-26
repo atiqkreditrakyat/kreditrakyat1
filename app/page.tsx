@@ -50,7 +50,8 @@ export default function Home() {
       const submitLead = async (e: React.FormEvent) => {
               e.preventDefault();
               if (leadName && leadPhone) {
-                        await fetch('https://n8n.recal.my/webhook/sales-lead', {
+                        // Fire-and-forget: log lead to n8n pipeline
+                        fetch('https://n8n.recal.my/webhook/sales-lead', {
                                     method: 'POST',
                                     headers: { 'Content-Type': 'application/json' },
                                     body: JSON.stringify({
@@ -62,12 +63,20 @@ export default function Home() {
                                     }),
                                     mode: 'no-cors'
                         });
+
+                        // Redirect to WhatsApp with pre-filled message
+                        const waNumber = 'YOUR_WHATSAPP_NUMBER'; // e.g. 60123456789
+                        const waMessage = encodeURIComponent(`Hi saya ${leadName}, saya dah isi borang di website. Berminat untuk tahu lebih lanjut tentang pembiayaan Kredit Rakyat.`);
+                        const waUrl = `https://wa.me/${waNumber}?text=${waMessage}`;
+
                         setIsModalOpen(false);
-                        showToast("Permohonan berjaya! Kami akan hubungi anda segera.");
                         setLeadName("");
                         setLeadPhone("");
                         setLeadGaji("");
                         setLeadSektor("");
+
+                        // Open WhatsApp in new tab
+                        window.open(waUrl, '_blank');
               }
       };
 
