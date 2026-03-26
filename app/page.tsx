@@ -23,6 +23,8 @@ export default function Home() {
     // Form State
     const [leadName, setLeadName] = useState("");
     const [leadPhone, setLeadPhone] = useState("");
+    const [leadGaji, setLeadGaji] = useState("");
+    const [leadSektor, setLeadSektor] = useState("");
 
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
@@ -44,15 +46,30 @@ export default function Home() {
         setTimeout(() => setToastMessage(""), 3000);
     };
 
-    const submitLead = (e: React.FormEvent) => {
-        e.preventDefault();
-        if (leadName && leadPhone) {
-            setIsModalOpen(false);
-            showToast("Permohonan berjaya! Kami akan hubungi anda segera.");
-            setLeadName("");
-            setLeadPhone("");
-        }
-    };
+      const submitLead = async (e: React.FormEvent) => {
+              e.preventDefault();
+              if (leadName && leadPhone) {
+                        await fetch('https://n8n.recal.my/webhook/sales-lead', {
+                                    method: 'POST',
+                                    headers: { 'Content-Type': 'application/json' },
+                                    body: JSON.stringify({
+                                                  nama: leadName,
+                                                  telefon: leadPhone,
+                                                  gaji: leadGaji,
+                                                  sektor: leadSektor,
+                                                  source: 'landing-page'
+                                    }),
+                                    mode: 'no-cors'
+                        });
+                        setIsModalOpen(false);
+                        showToast("Permohonan berjaya! Kami akan hubungi anda segera.");
+                        setLeadName("");
+                        setLeadPhone("");
+                        setLeadGaji("");
+                        setLeadSektor("");
+              }
+      };
+      };
 
     return (
         <div className="font-sans text-gray-800 bg-surface overflow-x-hidden min-h-screen">
@@ -100,7 +117,7 @@ export default function Home() {
                                     <div className="grid grid-cols-2 gap-3">
                                         <div>
                                             <label className="block text-xs font-semibold text-gray-700 uppercase tracking-wide mb-2">Gaji</label>
-                                            <select className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary outline-none bg-white">
+                                                            <select className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary outline-none bg-white font-medium" value={leadGaji} onChange={(e) => setLeadGaji(e.target.value)}>
                                                 <option>RM1.5k-3k</option>
                                                 <option>RM3k-5k</option>
                                                 <option>RM5k-8k</option>
@@ -109,7 +126,7 @@ export default function Home() {
                                         </div>
                                         <div>
                                             <label className="block text-xs font-semibold text-gray-700 uppercase tracking-wide mb-2">Sektor</label>
-                                            <select className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary outline-none bg-white">
+                                                            <select className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary outline-none bg-white font-medium" value={leadSektor} onChange={(e) => setLeadSektor(e.target.value)}>
                                                 <option>Kerajaan</option>
                                                 <option>Badan Berkanun</option>
                                                 <option>GLC</option>
