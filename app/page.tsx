@@ -69,7 +69,6 @@ export default function Home() {
                         setLeadSektor("");
               }
       };
-      };
 
     return (
         <div className="font-sans text-gray-800 bg-surface overflow-x-hidden min-h-screen">
@@ -134,8 +133,8 @@ export default function Home() {
                                         </div>
                                     </div>
                                     <button type="submit" className="w-full btn-primary text-white py-4 rounded-xl font-bold text-base shadow-lg shadow-primary/30 mt-6 flex items-center justify-center gap-2">
-                                        <i className="fab fa-whatsapp text-xl"></i>
-                                        Hantar & WhatsApp Sekarang
+                                        <i className="fas fa-paper-plane text-xl"></i>
+                                        Semak Kelayakan
                                     </button>
                                 </form>
 
