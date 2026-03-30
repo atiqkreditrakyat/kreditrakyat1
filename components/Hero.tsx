@@ -6,6 +6,8 @@ interface HeroProps {
     onOpenModal: () => void;
 }
 
+declare const AOS: { init: (options?: Record<string, unknown>) => void };
+
 export default function Hero({ onOpenModal }: HeroProps) {
     const [loanAmount, setLoanAmount] = useState(50000);
     const [displayAmount, setDisplayAmount] = useState("50,000");
@@ -13,12 +15,11 @@ export default function Hero({ onOpenModal }: HeroProps) {
     const interestRate = 0.035;
 
     useEffect(() => {
-        // @ts-ignore
         if (typeof AOS !== 'undefined') {
-            // @ts-ignore
             AOS.init({ duration: 800, once: true, offset: 50 });
         }
     }, []);
+
 
     const totalInterest = loanAmount * interestRate * tenure;
     const totalPayment = loanAmount + totalInterest;
@@ -85,7 +86,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
                         <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto font-light">
                             Platform <strong className="text-primary font-semibold">One-Stop Center</strong> yang membandingkan tawaran daripada
                             <span className="text-gray-900 font-semibold mx-1">10+ Koperasi &amp; Bank</span> terkemuka.
-                            Kelulusan dalam <span className="bg-lime/30 px-2 py-0.5 rounded font-semibold text-primary">1 Hari Bekerja</span>.
+                            Kelulusan dalam <span className="bg-lime/30 px-2 py-0.5 rounded font-semibold text-primary">2 Hari Bekerja</span>.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center">

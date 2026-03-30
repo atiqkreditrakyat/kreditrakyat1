@@ -37,7 +37,7 @@ export default function Process({ onOpenModal }: ProcessProps) {
                             3
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-3">Kelulusan & Pembayaran</h3>
-                        <p className="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto">Wang dikreditkan terus ke akaun bank anda dalam masa 24 jam selepas kelulusan.</p>
+                        <p className="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto">Wang dikreditkan terus ke akaun bank anda dalam masa 48 jam selepas kelulusan.</p>
                     </div>
                 </div>
 

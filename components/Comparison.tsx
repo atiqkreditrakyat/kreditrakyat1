@@ -37,7 +37,7 @@ export default function Comparison() {
                         <tbody className="divide-y divide-gray-100">
                             <tr className="hover:bg-gray-50/50 transition-colors">
                                 <th scope="row" className="p-6 font-semibold text-gray-700">Tempoh Kelulusan</th>
-                                <td className="p-6 text-center border-x border-gray-100 font-bold text-gray-900 bg-primary/5">1 - 2 Hari Bekerja</td>
+                                <td className="p-6 text-center border-x border-gray-100 font-bold text-gray-900 bg-primary/5">2 Hari Bekerja</td>
                                 <td className="p-6 text-center text-gray-500">2 - 4 Minggu</td>
                                 <td className="p-6 text-center text-gray-500">24 Jam</td>
                             </tr>

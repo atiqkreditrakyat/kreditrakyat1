@@ -3,7 +3,7 @@ const isGithubActions = process.env.GITHUB_ACTIONS || false;
 
 const nextConfig = {
     output: 'export',
-    basePath: isGithubActions ? '/kreditrakyat1' : '',
+    basePath: isGithubActions ? '/kredit-rakyat' : '',
     images: {
         unoptimized: true,
         remotePatterns: [

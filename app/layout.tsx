@@ -84,6 +84,41 @@ const jsonLd = {
   "annualPercentageRate": "2.99% - 4.99%"
 };
 
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Rakyat Fintech Sdn Bhd",
+  "legalName": "Rakyat Fintech Sdn. Bhd. (202501018111 (1619525-V))",
+  "taxID": "202501018111 (1619525-V)",
+  "url": "https://kreditrakyat.com/",
+  "logo": "https://kreditrakyat.com/wp-content/uploads/2025/07/KR-Brand-Guideline-06-2048x495.png",
+  "description": "Kakitangan kerajaan perlukan pinjaman yang mudah? Kredit Rakyat tawarkan pinjaman peribadi dari bank & koperasi dengan kelulusan cepat dalam 1 hari. Hubungi kami.",
+  "telephone": "+6014 704 7275",
+  "email": "infokreditrakyat@gmail.com",
+  "sameAs": [
+    "https://www.instagram.com/kreditrakyat.my/",
+    "https://www.linkedin.com/in/kredit-rakyat-aa3534237/",
+    "https://www.facebook.com/profile.php?id=61578886204768",
+    "https://www.tiktok.com/@kreditrakyatcom"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "7A-1, Jalan SS5B/4 Kelana Jaya",
+    "addressLocality": "Petaling Jaya",
+    "addressRegion": "Selangor",
+    "postalCode": "47301",
+    "addressCountry": {
+      "@type": "Country",
+      "name": "MY"
+    }
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "3.10412",
+    "longitude": "101.60742"
+  }
+};
+
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -109,7 +144,7 @@ export default function RootLayout({
                 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
                 <script
                     type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify([jsonLd, localBusinessJsonLd]) }}
                 />
             </head>
             <body className={`font-sans text-gray-800 bg-surface overflow-x-hidden ${inter.className}`}>

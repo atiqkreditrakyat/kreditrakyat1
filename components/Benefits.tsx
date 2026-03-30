@@ -15,7 +15,7 @@ export default function Benefits() {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {[
-                        { icon: 'fa-user-clock', title: 'Proses Pantas', desc: 'Kelulusan dalam <strong class="text-primary">1 hari bekerja</strong>. Tiada proses berlarutan atau paperwork yang menyusahkan.', gradient: 'from-primary to-primarydark', shadow: 'shadow-primary/30', blur: 'from-primary/10' },
+                        { icon: 'fa-user-clock', title: 'Proses Pantas', desc: 'Kelulusan dalam <strong class="text-primary">2 hari bekerja</strong>. Tiada proses berlarutan atau paperwork yang menyusahkan.', gradient: 'from-primary to-primarydark', shadow: 'shadow-primary/30', blur: 'from-primary/10' },
                         { icon: 'fa-mosque', title: 'Patuh Syariah 100%', desc: 'Semua produk <strong class="text-primary">bebas riba</strong> dan patuh syariah. Diperakui oleh panel syariah terkemuka.', gradient: 'from-lime to-limeDark', shadow: 'shadow-lime/30', blur: 'from-lime/20', iColor: 'text-gray-900' },
                         { icon: 'fa-hand-holding-heart', title: 'Tiada Caj Tersembunyi', desc: '<strong class="text-primary">100% Percuma</strong> perkhidmatan. Tiada yuran pemprosesan atau yuran pentadbiran.', gradient: 'from-orange-400 to-orange-600', shadow: 'shadow-orange/30', blur: 'from-orange-400/20' },
                         { icon: 'fa-shield-alt', title: 'Data & Privasi Selamat', desc: 'Sistem <strong class="text-primary">256-bit encryption</strong>. Data tidak dikongsi dengan pihak ketiga tanpa kebenaran.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue/30', blur: 'from-blue-500/20' },

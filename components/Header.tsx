@@ -25,13 +25,7 @@ export default function Header({ onOpenModal }: HeaderProps) {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                     <div className="flex justify-between items-center h-20">
                         <div className="flex items-center gap-3 cursor-pointer group" onClick={() => window.scrollTo(0, 0)}>
-                            <div className="w-10 h-10 bg-gradient-to-br from-primary to-primarydark rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-primary/30 group-hover:scale-110 transition-transform duration-300">
-                                <i className="fas fa-university"></i>
-                            </div>
-                            <div className="flex flex-col">
-                                <span className="text-lg font-display font-bold text-gray-900 tracking-tight leading-none group-hover:text-primary transition-colors">KREDIT RAKYAT</span>
-                                <span className="text-[10px] text-gray-500 tracking-widest font-medium">PINJAMAN KOPERASI</span>
-                            </div>
+                            <img src="/kredit-rakyat/logo.png" alt="Kredit Rakyat" className="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
                         </div>
 
                         <div className="hidden lg:flex items-center gap-8">

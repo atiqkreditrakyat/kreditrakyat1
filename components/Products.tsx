@@ -18,7 +18,7 @@ export default function Products({ onOpenModal }: ProductsProps) {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {[
-                        { icon: 'fa-hand-holding-usd', title: 'Pinjaman Peribadi', desc: 'Tanpa penjamin atau cagaran. Kelulusan pantas dalam 24 jam.', gradient: 'from-primary to-primarydark', shadow: 'shadow-primary/30' },
+                        { icon: 'fa-hand-holding-usd', title: 'Pinjaman Peribadi', desc: 'Tanpa penjamin atau cagaran. Kelulusan pantas dalam 48 jam.', gradient: 'from-primary to-primarydark', shadow: 'shadow-primary/30' },
                         { icon: 'fa-motorcycle', title: 'Pinjaman Motosikal', desc: 'Skim khas kakitangan kerajaan dengan kadar bulanan yang baik.', gradient: 'from-lime to-limeDark', shadow: 'shadow-lime/30' },
                         { icon: 'fa-compress-arrows-alt', title: 'Penyatuan Hutang', desc: 'Gabungkan hutang menjadi satu. Kurangkan komitmen bulanan.', gradient: 'from-orange-400 to-orange-600', shadow: 'shadow-orange/30' },
                         { icon: 'fa-home', title: 'Pinjaman Perumahan', desc: 'Program LPHS, PR1MA & PKNS untuk kakitangan kerajaan.', gradient: 'from-blue-500 to-blue-700', shadow: 'shadow-blue/30' },

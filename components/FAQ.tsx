@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 const faqData = [
     { q: 'Adakah Kredit Rakyat berlesen?', a: 'Ya, Kredit Rakyat adalah platform pembiayaan berlesen yang beroperasi di bawah pengawasan Kementerian Kewangan Malaysia dan Bank Negara Malaysia. Kami bekerjasama dengan koperasi-koperasi berdaftar dan bank-bank terkemuka.' },
-    { q: 'Berapa lama proses kelulusan?', a: 'Proses kelulusan mengambil masa <strong>1 hari bekerja (24 jam)</strong> sahaja untuk kebanyakan kes. Sekiranya dokumen lengkap diberikan, wang boleh dikreditkan ke akaun anda dalam masa yang singkat.' },
+    { q: 'Berapa lama proses kelulusan?', a: 'Proses kelulusan mengambil masa <strong>2 hari bekerja (48 jam)</strong> sahaja untuk kebanyakan kes. Sekiranya dokumen lengkap diberikan, wang boleh dikreditkan ke akaun anda dalam masa yang singkat.' },
     { q: 'Adakah perlu penjamin atau cagaran?', a: 'Kebanyakan produk kami <strong>tidak memerlukan penjamin atau cagaran</strong>. Cukup dengan slip gaji terkini dan dokumen pengenalan sebagai bukti kelayakan.' },
     { q: 'Bolehkah saya memohon jika ada CTOS/CCRIS tidak sempurna?', a: 'Ya, kami menerima permohonan daripada mereka yang mempunyai rekod kredit tidak sempurna. Setiap kes akan dinilai secara individu berdasarkan kemampuan bayaran balik anda.' },
     { q: 'Adakah ada caj tersembunyi?', a: '<strong>Tiada caj tersembunyi.</strong> Perkhidmatan kami adalah 100% percuma. Tiada yuran pemprosesan, yuran pentadbiran atau sebarang bayaran pendahuluan dikenakan.' },

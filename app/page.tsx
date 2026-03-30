@@ -65,7 +65,7 @@ export default function Home() {
                         });
 
                         // Redirect to WhatsApp with pre-filled message
-                        const waNumber = 'YOUR_WHATSAPP_NUMBER'; // e.g. 60123456789
+                        const waNumber = '60147047275'; // Verified number
                         const waMessage = encodeURIComponent(`Hi saya ${leadName}, saya dah isi borang di website. Berminat untuk tahu lebih lanjut tentang pembiayaan Kredit Rakyat.`);
                         const waUrl = `https://wa.me/${waNumber}?text=${waMessage}`;
 

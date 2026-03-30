@@ -1,12 +1,11 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
-import Image from "next/image";
 
 const testimonials = [
-    { img: '11', name: 'Ahmad bin Abdullah', job: 'Guru, SMK Kuala Lumpur', amount: 'RM50,000', review: 'Proses yang sangat pantas dan mudah. Saya memohon pada pagi Isnin dan wang sudah masuk akaun pada petang yang sama.', stars: 5 },
-    { img: '5', name: 'Siti Nurhaliza', job: 'Jururawat, HKL', amount: 'RM35,000', review: 'Saya ada masalah CTOS sedikit tapi Kredit Rakyat tetap bantu untuk mendapatkan kelulusan. Kadar yang ditawarkan juga lebih baik!', stars: 5 },
-    { img: '3', name: 'Muhammad Rizal', job: 'Pegawai, Kementerian', amount: 'RM80,000', review: 'Penyatuan hutang berjaya mengurangkan komitmen bulanan saya dari RM1,200 kepada RM800. Penjimatan yang besar!', stars: 5 },
+    { init: 'A', color: 'from-teal-500 to-teal-600', name: 'Ahmad bin Abdullah', job: 'Guru, SMK Kuala Lumpur', amount: 'RM50,000', review: 'Proses yang sangat pantas dan mudah. Saya memohon pada pagi Isnin dan wang sudah masuk akaun pada petang yang sama.', stars: 5 },
+    { init: 'S', color: 'from-pink-500 to-pink-600', name: 'Siti Nurhaliza', job: 'Jururawat, HKL', amount: 'RM35,000', review: 'Saya ada masalah CTOS sedikit tapi Kredit Rakyat tetap bantu untuk mendapatkan kelulusan. Kadar yang ditawarkan juga lebih baik!', stars: 5 },
+    { init: 'M', color: 'from-indigo-500 to-indigo-600', name: 'Muhammad Rizal', job: 'Pegawai, Kementerian', amount: 'RM80,000', review: 'Penyatuan hutang berjaya mengurangkan komitmen bulanan saya dari RM1,200 kepada RM800. Penjimatan yang besar!', stars: 5 },
     { init: 'K', color: 'from-blue-500 to-blue-600', name: 'Kumaravel', job: 'Pegawai Teknik, JKR', amount: 'RM60,000', review: 'Pilihan koperasi yang banyak dan boleh bandingkan kadar. Staff consultant sangat professional dan tidak pushy.', stars: 4.5 },
     { init: 'F', color: 'from-purple-500 to-purple-600', name: 'Faridah Hassan', job: 'Pegawai, JAIN', amount: 'RM45,000', review: 'Dari segi patuh syariah, saya yakin dengan Kredit Rakyat. Semua dokumen jelas dan transparent. Tiada caj tersembunyi.', stars: 5 },
     { init: 'Z', color: 'from-orange-500 to-orange-600', name: 'Zulkifli', job: 'Polis Bantuan, IPD', amount: 'RM120,000', review: 'Pinjaman perumahan untuk program LPHS berjaya diluluskan dalam masa 2 hari. Staff sangat knowledgeable.', stars: 5 },
@@ -112,11 +111,7 @@ export default function Testimonials() {
                             <div className="flex items-center gap-4 relative z-10 pt-4 border-t border-gray-100">
                                 <div className="relative">
                                     <div className="absolute inset-0 bg-primary/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                                    {test.img ? (
-                                        <Image src={`https://i.pravatar.cc/150?img=${test.img}`} alt={test.name} width={52} height={52} className="rounded-full object-cover ring-2 ring-transparent group-hover:ring-primary/20 transition-all duration-300 relative z-10" />
-                                    ) : (
-                                        <div className={`w-[52px] h-[52px] rounded-full bg-gradient-to-br flex items-center justify-center text-white font-bold text-lg ring-2 ring-transparent group-hover:ring-primary/20 transition-all ${test.color} relative z-10`}>{test.init}</div>
-                                    )}
+                                    <div className={`w-[52px] h-[52px] rounded-full bg-gradient-to-br flex items-center justify-center text-white font-bold text-lg ring-2 ring-transparent group-hover:ring-primary/20 transition-all ${test.color} relative z-10`}>{test.init}</div>
                                 </div>
                                 <div>
                                     <p className="font-bold text-gray-900 text-sm group-hover:text-primary transition-colors duration-300">{test.name}</p>
