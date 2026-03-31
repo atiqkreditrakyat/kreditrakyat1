@@ -25,7 +25,7 @@ export default function Header({ onOpenModal }: HeaderProps) {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                     <div className="flex justify-between items-center h-20">
                         <div className="flex items-center gap-3 cursor-pointer group" onClick={() => window.scrollTo(0, 0)}>
-                            <img src="/kredit-rakyat/logo.png" alt="Kredit Rakyat" className="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
+                            <img src={process.env.NODE_ENV === 'production' ? '/kreditrakyat1/logo.png' : '/logo.png'} alt="Kredit Rakyat" className="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
                         </div>
 
                         <div className="hidden lg:flex items-center gap-8">

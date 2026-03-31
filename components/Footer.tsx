@@ -5,7 +5,7 @@ export default function Footer() {
                 <div className="grid md:grid-cols-4 gap-12 mb-12">
                     <div className="col-span-2 md:col-span-1">
                         <div className="flex items-center gap-2 mb-6">
-                            <img src="/kredit-rakyat/logo.png" alt="Kredit Rakyat" className="h-10 w-auto object-contain" />
+                            <img src={process.env.NODE_ENV === 'production' ? '/kreditrakyat1/logo.png' : '/logo.png'} alt="Kredit Rakyat" className="h-10 w-auto object-contain" />
                         </div>
                         <p className="text-sm text-gray-500 leading-relaxed mb-6">Platform pembiayaan pilihan penjawat awam Malaysia. Komited untuk memberikan perkhidmatan kewangan yang selamat, patuh syariah dan telus.</p>
                         <div className="flex gap-3">
