@@ -41,7 +41,6 @@ export default function Footer() {
                         <ul className="space-y-4 text-sm text-gray-600">
                             <li className="flex items-center gap-3"><i className="fas fa-envelope text-primary w-4"></i> infokreditrakyat@gmail.com</li>
                             <li className="flex items-center gap-3"><i className="fas fa-phone text-primary w-4"></i> +6014 704 7275</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-map-marker-alt text-primary w-4 mt-1"></i> <span className="leading-snug">7A-1, Jalan SS5B/4 Kelana Jaya,<br/>47301 Petaling Jaya,<br/>Selangor, Malaysia</span></li>
                         </ul>
                     </div>
                 </div>

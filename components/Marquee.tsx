@@ -11,9 +11,9 @@ export default function Marquee() {
                     {[1, 2].map((_, idx) => (
                         <div key={idx} className="flex items-center gap-16 px-8">
                             {[
-                                { image: '/partners/wawasan.png', name: 'Yayasan Wawasan' },
-                                { image: '/partners/rce.png', name: 'Yayasan Ihsan Rakyat' },
-                                { image: '/partners/xanderia.png', name: 'Xanderia' },
+                                { image: process.env.NODE_ENV === 'production' ? '/kreditrakyat1/partners/wawasan.png' : '/partners/wawasan.png', name: 'Yayasan Wawasan' },
+                                { image: process.env.NODE_ENV === 'production' ? '/kreditrakyat1/partners/rce.png' : '/partners/rce.png', name: 'Yayasan Ihsan Rakyat' },
+                                { image: process.env.NODE_ENV === 'production' ? '/kreditrakyat1/partners/xanderia.png' : '/partners/xanderia.png', name: 'Xanderia' },
                                 { icon: 'fa-hand-holding-usd', name: 'Koperasi Tentera' },
                                 { icon: 'fa-piggy-bank', name: 'Koperasi Polis' },
                             ].map((bank, i) => (

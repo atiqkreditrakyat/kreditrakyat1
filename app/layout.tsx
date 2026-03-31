@@ -100,23 +100,7 @@ const localBusinessJsonLd = {
     "https://www.linkedin.com/in/kredit-rakyat-aa3534237/",
     "https://www.facebook.com/profile.php?id=61578886204768",
     "https://www.tiktok.com/@kreditrakyatcom"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "7A-1, Jalan SS5B/4 Kelana Jaya",
-    "addressLocality": "Petaling Jaya",
-    "addressRegion": "Selangor",
-    "postalCode": "47301",
-    "addressCountry": {
-      "@type": "Country",
-      "name": "MY"
-    }
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "3.10412",
-    "longitude": "101.60742"
-  }
+  ]
 };
 
 export default function RootLayout({
