@@ -1,27 +1,40 @@
 "use client";
 
 import React from "react";
-// import Script from "next/script"; // For when script is provided
+import Script from "next/script";
 
 export default function TrustwiredForm() {
     return (
-        <div className="w-full min-h-[400px] flex flex-col items-center justify-center bg-gray-50 rounded-2xl border-2 border-dashed border-gray-200 p-8 text-center">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 text-primary">
-                <i className="fas fa-form text-2xl"></i>
-            </div>
-            <h4 className="text-lg font-bold text-gray-900 mb-2">Menunggu Kod Borang Trustwired</h4>
-            <p className="text-gray-500 text-sm max-w-[280px]">
-                Sila masukkan kod embed Trustwired di sini untuk mengaktifkan borang permohonan.
-            </p>
+        <div className="w-full relative min-h-[600px] bg-white">
+            {/* Trustwired Embed Script */}
+            <Script 
+                src="https://hq.kreditrakyat.com/js/form_embed.js" 
+                strategy="afterInteractive" 
+            />
             
-            {/* 
-                TRUSTWIRED EMBED PLACEHOLDER:
-                Once code is provided, replace this entire div with the script or iframe snippets.
-            */}
-            
-            <div className="mt-6 w-full max-w-xs h-2 bg-gray-200 rounded-full overflow-hidden">
-                <div className="w-1/3 h-full bg-primary animate-pulse"></div>
-            </div>
+            {/* Trustwired Iframe Embed */}
+            <iframe
+                src="https://hq.kreditrakyat.com/widget/form/nVLaC0Qa39JBXGPsiADo?notrack=true"
+                style={{
+                    width: '100%',
+                    height: '100%',
+                    border: 'none',
+                    minHeight: '800px'
+                }}
+                id="inline-nVLaC0Qa39JBXGPsiADo"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-defer-user-activate="false"
+                data-redirect-to-view="false"
+                data-fixed-footer="false"
+                data-toggle-type="false"
+                data-toggle-status="none"
+                data-contact-context="false"
+                title="Kredit Rakyat Form"
+            />
         </div>
     );
 }
