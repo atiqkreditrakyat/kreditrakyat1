@@ -33,7 +33,7 @@ const robotoCondensed = Roboto_Condensed({
 
 export const metadata: Metadata = {
     title: "Pembiayaan Peribadi Kerajaan & Koperasi | Kelulusan 24 Jam | Kredit Rakyat",
-    description: "Pembiayaan peribadi patuh syariah untuk penjawat awam & badan berkanun. Bandingkan 10+ tawaran koperasi & bank terkemuka di Malaysia. Kadar faedah rendah dari 2.99%.",
+    description: "Pembiayaan peribadi patuh syariah untuk penjawat awam & badan berkanun. Bandingkan 10+ tawaran koperasi & bank terkemuka di Malaysia. Kadar untung rendah dari 3.5%.",
     keywords: ["pembiayaan peribadi kerajaan", "koperasi kakitangan kerajaan", "repayment angkasa", "kredit rakyat malaysia", "pembiayaan koperasi", "pembiayaan syariah"],
     openGraph: {
         title: "Kredit Rakyat | Pembiayaan Peribadi Koperasi Kerajaan",
@@ -79,9 +79,9 @@ const jsonLd = {
       "name": "MY"
     }
   },
-  "feesAndCommissionsSpecification": "Tiada caj pendahuluan (upfront fees). Kadar faedah dari 2.99%.",
-  "interestRate": "2.99%",
-  "annualPercentageRate": "2.99% - 4.99%"
+  "feesAndCommissionsSpecification": "Tiada caj pendahuluan (upfront fees). Kadar untung dari 3.5%.",
+  "interestRate": "3.5%",
+  "annualPercentageRate": "3.5% - 4.99%"
 };
 
 const localBusinessJsonLd = {
