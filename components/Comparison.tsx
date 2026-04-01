@@ -31,7 +31,7 @@ export default function Comparison() {
                                     </div>
                                 </th>
                                 <th scope="col" className="p-6 text-center font-bold text-gray-600 w-1/4">Bank Tradisional</th>
-                                <th scope="col" className="p-6 text-center font-bold text-gray-600 w-1/4">Pinjaman Berlesen</th>
+                                <th scope="col" className="p-6 text-center font-bold text-gray-600 w-1/4">Pembiayaan Berlesen</th>
                             </tr>
                         </thead>
                         <tbody className="divide-y divide-gray-100">

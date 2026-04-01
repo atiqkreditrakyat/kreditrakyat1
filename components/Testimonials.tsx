@@ -8,7 +8,7 @@ const testimonials = [
     { init: 'M', color: 'from-indigo-500 to-indigo-600', name: 'Muhammad Rizal', job: 'Pegawai, Kementerian', amount: 'RM80,000', review: 'Penyatuan hutang berjaya mengurangkan komitmen bulanan saya dari RM1,200 kepada RM800. Penjimatan yang besar!', stars: 5 },
     { init: 'K', color: 'from-blue-500 to-blue-600', name: 'Kumaravel', job: 'Pegawai Teknik, JKR', amount: 'RM60,000', review: 'Pilihan koperasi yang banyak dan boleh bandingkan kadar. Staff consultant sangat professional dan tidak pushy.', stars: 4.5 },
     { init: 'F', color: 'from-purple-500 to-purple-600', name: 'Faridah Hassan', job: 'Pegawai, JAIN', amount: 'RM45,000', review: 'Dari segi patuh syariah, saya yakin dengan Kredit Rakyat. Semua dokumen jelas dan transparent. Tiada caj tersembunyi.', stars: 5 },
-    { init: 'Z', color: 'from-orange-500 to-orange-600', name: 'Zulkifli', job: 'Polis Bantuan, IPD', amount: 'RM120,000', review: 'Pinjaman perumahan untuk program LPHS berjaya diluluskan dalam masa 2 hari. Staff sangat knowledgeable.', stars: 5 },
+    { init: 'Z', color: 'from-orange-500 to-orange-600', name: 'Zulkifli', job: 'Polis Bantuan, IPD', amount: 'RM120,000', review: 'Pembiayaan perumahan untuk program LPHS berjaya diluluskan dalam masa 2 hari. Staff sangat knowledgeable.', stars: 5 },
 ];
 
 export default function Testimonials() {

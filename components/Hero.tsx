@@ -71,7 +71,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
                         </div>
 
                         <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight mb-6 max-w-5xl mx-auto">
-                            Pinjaman Koperasi
+                            Pembiayaan Koperasi
                             <span className="hero-gradient-text italic font-extrabold mx-2">Patuh Syariah</span>
                             <br className="hidden sm:block" />
                             untuk
@@ -119,12 +119,12 @@ export default function Hero({ onOpenModal }: HeroProps) {
                         <div className="max-w-4xl mx-auto glass-card rounded-3xl p-6 lg:p-8 shadow-2xl border border-white/60" data-aos="fade-up" data-aos-delay="300">
                             <div className="grid md:grid-cols-2 gap-6 items-center text-left">
                                 <div>
-                                    <h3 className="text-xl font-display font-bold text-gray-900 mb-2">Kalkulator Pinjaman</h3>
+                                    <h3 className="text-xl font-display font-bold text-gray-900 mb-2">Kalkulator Pembiayaan</h3>
                                     <p className="text-sm text-gray-500 mb-4">Dapatkan anggaran bayaran bulanan anda.</p>
 
                                     <div className="space-y-4">
                                         <div>
-                                            <label className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2 block">Jumlah Pinjaman</label>
+                                            <label className="text-xs font-semibold text-gray-600 uppercase tracking-wide mb-2 block">Jumlah Pembiayaan</label>
                                             <div className="relative group">
                                                 <span className="absolute left-4 top-1/2 -translate-y-1/2 text-lg font-bold text-primary select-none pointer-events-none">RM</span>
                                                 <input

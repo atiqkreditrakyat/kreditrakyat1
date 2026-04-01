@@ -14,7 +14,7 @@ export default function About() {
                         Kredit Rakyat adalah platform pembiayaan yang memberi peluang kepada kakitangan kerajaan dan ahli koperasi untuk mendapatkan dana tambahan dengan kadar faedah yang kompetitif.
                     </p>
                     <p className="text-gray-600 leading-relaxed mb-8">
-                        Kami bekerjasama dengan <strong className="text-primary">10+ Koperasi dan Bank</strong> terkemuka untuk memberikan anda pilihan terbaik. Misi kami adalah untuk menyediakan pinjaman yang <span className="font-semibold text-gray-900">Pantas, Selamat, dan Patuh Syariah</span>.
+                        Kami bekerjasama dengan <strong className="text-primary">10+ Koperasi dan Bank</strong> terkemuka untuk memberikan anda pilihan terbaik. Misi kami adalah untuk menyediakan pembiayaan yang <span className="font-semibold text-gray-900">Pantas, Selamat, dan Patuh Syariah</span>.
                     </p>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">

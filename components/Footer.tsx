@@ -32,7 +32,7 @@ export default function Footer() {
                             <li><a href="#" className="hover:text-primary transition-colors">Program Referral</a></li>
                             <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
                             <li><a href="#" className="hover:text-primary transition-colors">Semak Status</a></li>
-                            <li><a href="#" className="hover:text-primary transition-colors">Pinjaman</a></li>
+                            <li><a href="#" className="hover:text-primary transition-colors">Pembiayaan</a></li>
                         </ul>
                     </div>
 

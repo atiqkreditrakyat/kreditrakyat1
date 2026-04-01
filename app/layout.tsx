@@ -32,11 +32,11 @@ const robotoCondensed = Roboto_Condensed({
 });
 
 export const metadata: Metadata = {
-    title: "Pinjaman Peribadi Kerajaan & Koperasi | Kelulusan 24 Jam | Kredit Rakyat",
+    title: "Pembiayaan Peribadi Kerajaan & Koperasi | Kelulusan 24 Jam | Kredit Rakyat",
     description: "Pembiayaan peribadi patuh syariah untuk penjawat awam & badan berkanun. Bandingkan 10+ tawaran koperasi & bank terkemuka di Malaysia. Kadar faedah rendah dari 2.99%.",
-    keywords: ["pinjaman peribadi kerajaan", "koperasi kakitangan kerajaan", "repayment angkasa", "kredit rakyat malaysia", "pinjaman koperasi", "pembiayaan syariah"],
+    keywords: ["pembiayaan peribadi kerajaan", "koperasi kakitangan kerajaan", "repayment angkasa", "kredit rakyat malaysia", "pembiayaan koperasi", "pembiayaan syariah"],
     openGraph: {
-        title: "Kredit Rakyat | Pinjaman Peribadi Koperasi Kerajaan",
+        title: "Kredit Rakyat | Pembiayaan Peribadi Koperasi Kerajaan",
         description: "Banding & mohon pembiayaan peribadi penjawat awam paling pantas & selamat di Malaysia. Kelulusan seawal 1 hari bekerja.",
         url: "https://pinjamkerajaan.com.my",
         siteName: "Kredit Rakyat",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
                 url: "/og-image.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Kredit Rakyat - Pinjaman Koperasi Kerajaan",
+                alt: "Kredit Rakyat - Pembiayaan Koperasi Kerajaan",
             },
         ],
         locale: "ms_MY",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Kredit Rakyat | Pinjaman Peribadi Koperasi Kerajaan",
+        title: "Kredit Rakyat | Pembiayaan Peribadi Koperasi Kerajaan",
         description: "Platform pembiayaan peribadi penjawat awam terbaik di Malaysia. Patuh Syariah & Selamat.",
     },
     alternates: {
@@ -92,7 +92,7 @@ const localBusinessJsonLd = {
   "taxID": "202501018111 (1619525-V)",
   "url": "https://kreditrakyat.com/",
   "logo": "https://kreditrakyat.com/wp-content/uploads/2025/07/KR-Brand-Guideline-06-2048x495.png",
-  "description": "Kakitangan kerajaan perlukan pinjaman yang mudah? Kredit Rakyat tawarkan pinjaman peribadi dari bank & koperasi dengan kelulusan cepat dalam 1 hari. Hubungi kami.",
+  "description": "Kakitangan kerajaan perlukan pembiayaan yang mudah? Kredit Rakyat tawarkan pembiayaan peribadi dari bank & koperasi dengan kelulusan cepat dalam 1 hari. Hubungi kami.",
   "telephone": "+60 11-1334 3150",
   "email": "infokreditrakyat@gmail.com",
   "sameAs": [
