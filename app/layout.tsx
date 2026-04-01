@@ -93,7 +93,7 @@ const localBusinessJsonLd = {
   "url": "https://kreditrakyat.com/",
   "logo": "https://kreditrakyat.com/wp-content/uploads/2025/07/KR-Brand-Guideline-06-2048x495.png",
   "description": "Kakitangan kerajaan perlukan pinjaman yang mudah? Kredit Rakyat tawarkan pinjaman peribadi dari bank & koperasi dengan kelulusan cepat dalam 1 hari. Hubungi kami.",
-  "telephone": "+6014 704 7275",
+  "telephone": "+60 11-1334 3150",
   "email": "infokreditrakyat@gmail.com",
   "sameAs": [
     "https://www.instagram.com/kreditrakyat.my/",

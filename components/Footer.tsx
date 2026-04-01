@@ -40,7 +40,7 @@ export default function Footer() {
                         <h4 className="font-bold text-gray-900 mb-6">Hubungi</h4>
                         <ul className="space-y-4 text-sm text-gray-600">
                             <li className="flex items-center gap-3"><i className="fas fa-envelope text-primary w-4"></i> infokreditrakyat@gmail.com</li>
-                            <li className="flex items-center gap-3"><i className="fas fa-phone text-primary w-4"></i> +6014 704 7275</li>
+                            <li className="flex items-center gap-3"><i className="fas fa-phone text-primary w-4"></i> +60 11-1334 3150</li>
                         </ul>
                     </div>
                 </div>

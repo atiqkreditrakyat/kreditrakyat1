@@ -24,13 +24,13 @@ export default function CTA({ onOpenModal }: CTAProps) {
                         <span>Mohon Sekarang</span>
                         <i className="fas fa-arrow-right"></i>
                     </button>
-                    <a href="https://wa.me/60147047275" target="_blank" className="px-10 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl">
+                    <a href="https://wa.me/601113343150" target="_blank" className="px-10 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl">
                         <i className="fab fa-whatsapp text-xl"></i> WhatsApp Kami
                     </a>
                 </div>
 
                 <p className="text-gray-500 text-sm mt-8">
-                    <i className="fas fa-phone-alt mr-2 text-lime"></i> Hotline: <span className="text-lime">+6014 704 7275</span> (Isnin-Jumaat, 9pg-6ptg)
+                    <i className="fas fa-phone-alt mr-2 text-lime"></i> Hotline: <span className="text-lime">+60 11-1334 3150</span> (Isnin-Jumaat, 9pg-6ptg)
                 </p>
             </div>
         </section>
