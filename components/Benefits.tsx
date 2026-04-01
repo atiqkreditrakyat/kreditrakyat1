@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Benefits() {
     return (
-        <section id="faedah" className="py-24 bg-surface relative overflow-hidden">
+        <section id="manfaat" className="py-24 bg-surface relative overflow-hidden">
             <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-lime/20 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-primary/10 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">Keunggulan Kami</span>
-                    <h2 className="font-display text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Faedah Memohon <span className="text-primary">Dengan Kami</span></h2>
+                    <h2 className="font-display text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Kelebihan Memohon <span className="text-primary">Dengan Kami</span></h2>
                     <p className="text-gray-600 text-lg">Nikmati pelbagai kelebihan eksklusif apabila anda memohon melalui platform kami.</p>
                 </div>
 

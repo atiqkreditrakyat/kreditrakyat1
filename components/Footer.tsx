@@ -20,7 +20,7 @@ export default function Footer() {
                         <ul className="space-y-3 text-sm text-gray-600">
                             <li><a href="#tentang" className="hover:text-primary transition-colors">Tentang Kami</a></li>
                             <li><a href="#produk" className="hover:text-primary transition-colors">Produk</a></li>
-                            <li><a href="#faedah" className="hover:text-primary transition-colors">Faedah</a></li>
+                            <li><a href="#manfaat" className="hover:text-primary transition-colors">Kelebihan</a></li>
                             <li><a href="#testimoni" className="hover:text-primary transition-colors">Testimoni</a></li>
                             <li><a href="#faqs" className="hover:text-primary transition-colors">Soalan Lazim</a></li>
                         </ul>
@@ -49,7 +49,7 @@ export default function Footer() {
                 <div className="border-t border-gray-200 mt-8 pt-8 mb-8 text-xs text-gray-500 leading-relaxed text-justify">
                     <p>
                         <strong>Rakyat Fintech Sdn. Bhd. (202501018111 (1619525-V))</strong> merupakan pengurus rasmi untuk pemasaran jenama Kredit Rakyat. 
-                        <strong> Terma Pembiayaan:</strong> Tempoh bayaran balik dari <strong>12 hingga 120 bulan</strong>. Kadar untung bermula dari <strong>3.5%</strong> dengan Kadar Peratusan Tahunan (APR) maksimum: <strong>4.99%</strong> (tertakluk kepada kelulusan institusi kewangan). 
+                        <strong> Terma Pembiayaan:</strong> Tempoh bayaran balik dari <strong>12 hingga 120 bulan</strong>. Kadar tetap bermula dari <strong>3.5%</strong> dengan Kadar Peratusan Tahunan (APR) maksimum: <strong>4.99%</strong> (tertakluk kepada kelulusan institusi kewangan). 
                         <strong> Polisi Telus:</strong> Kami secara tegas <strong>TIDAK mengenakan sebarang yuran pendahuluan</strong> (no upfront fees) atau caj pemprosesan tersembunyi.
                     </p>
                 </div>

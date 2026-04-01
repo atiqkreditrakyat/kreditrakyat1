@@ -31,7 +31,7 @@ export default function Header({ onOpenModal }: HeaderProps) {
                         <div className="hidden lg:flex items-center gap-8">
                             <a href="#tentang" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Tentang Kami<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
                             <a href="#produk" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Produk<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
-                            <a href="#faedah" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Faedah<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
+                            <a href="#manfaat" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Kelebihan<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
                             <a href="#testimoni" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Testimoni<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
                             <a href="#faqs" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Soalan<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
                         </div>
@@ -57,9 +57,9 @@ export default function Header({ onOpenModal }: HeaderProps) {
                             <i className="fas fa-times"></i>
                         </button>
                         <div className="mt-16 space-y-4">
-                            {['tentang', 'produk', 'faedah', 'testimoni', 'faqs'].map(item => (
+                            {['tentang', 'produk', 'manfaat', 'testimoni', 'faqs'].map(item => (
                                 <a key={item} href={`#${item}`} className="block text-lg font-medium text-gray-800 py-2 border-b border-gray-100 capitalize" onClick={() => setIsMobileMenuOpen(false)}>
-                                    {item === 'faqs' ? 'Soalan Lazim' : item.replace('-', ' ')}
+                                    {item === 'faqs' ? 'Soalan Lazim' : item === 'manfaat' ? 'Kelebihan' : item.replace('-', ' ')}
                                 </a>
                             ))}
                             <button onClick={() => { onOpenModal(); setIsMobileMenuOpen(false); }} className="w-full btn-primary text-white py-4 rounded-xl font-bold mt-4">
