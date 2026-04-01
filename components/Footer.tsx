@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <footer className="bg-gray-50 border-t border-gray-200 py-16">
@@ -57,8 +59,8 @@ export default function Footer() {
                 <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-xs text-gray-500">&copy; 2026 Rakyat Fintech Sdn. Bhd. (202501018111 (1619525-V)). Hak Cipta Terpelihara.</p>
                     <div className="flex gap-6 text-xs text-gray-500">
-                        <a href="#" className="hover:text-primary transition-colors">Dasar Privasi</a>
-                        <a href="#" className="hover:text-primary transition-colors">Terma & Syarat</a>
+                        <Link href="/dasar-privasi" className="hover:text-primary transition-colors">Dasar Privasi</Link>
+                        <Link href="/terma-syarat" className="hover:text-primary transition-colors">Terma & Syarat</Link>
                         <span className="flex items-center gap-2"><i className="fas fa-shield-alt text-primary"></i> Platform Patuh Syariah</span>
                     </div>
                 </div>

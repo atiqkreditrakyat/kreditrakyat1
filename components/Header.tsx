@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 
 interface HeaderProps {
     onOpenModal: () => void;
@@ -24,16 +25,16 @@ export default function Header({ onOpenModal }: HeaderProps) {
                 <div className="absolute inset-0 bg-white/80 backdrop-blur-xl border-b border-white/20 shadow-sm"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                     <div className="flex justify-between items-center h-20">
-                        <div className="flex items-center gap-3 cursor-pointer group" onClick={() => window.scrollTo(0, 0)}>
+                        <Link href="/" className="flex items-center gap-3 cursor-pointer group">
                             <img src={process.env.NODE_ENV === 'production' ? '/kreditrakyat1/logo.png' : '/logo.png'} alt="Kredit Rakyat" className="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300" />
-                        </div>
+                        </Link>
 
                         <div className="hidden lg:flex items-center gap-8">
-                            <a href="#tentang" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Tentang Kami<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
-                            <a href="#produk" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Produk<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
-                            <a href="#manfaat" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Kelebihan<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
-                            <a href="#testimoni" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Testimoni<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
-                            <a href="#faqs" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Soalan<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
+                            <Link href="/#tentang" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Tentang Kami<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></Link>
+                            <Link href="/#produk" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Produk<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></Link>
+                            <Link href="/#manfaat" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Kelebihan<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></Link>
+                            <Link href="/#testimoni" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Testimoni<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></Link>
+                            <Link href="/#faqs" className="text-gray-600 hover:text-primary font-medium transition-colors text-sm relative group">Soalan<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></Link>
                         </div>
 
                         <div className="flex items-center gap-4">
@@ -58,9 +59,9 @@ export default function Header({ onOpenModal }: HeaderProps) {
                         </button>
                         <div className="mt-16 space-y-4">
                             {['tentang', 'produk', 'manfaat', 'testimoni', 'faqs'].map(item => (
-                                <a key={item} href={`#${item}`} className="block text-lg font-medium text-gray-800 py-2 border-b border-gray-100 capitalize" onClick={() => setIsMobileMenuOpen(false)}>
+                                <Link key={item} href={`/#${item}`} className="block text-lg font-medium text-gray-800 py-2 border-b border-gray-100 capitalize" onClick={() => setIsMobileMenuOpen(false)}>
                                     {item === 'faqs' ? 'Soalan Lazim' : item === 'manfaat' ? 'Kelebihan' : item.replace('-', ' ')}
-                                </a>
+                                </Link>
                             ))}
                             <button onClick={() => { onOpenModal(); setIsMobileMenuOpen(false); }} className="w-full btn-primary text-white py-4 rounded-xl font-bold mt-4">
                                 Mohon Sekarang
