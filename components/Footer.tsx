@@ -41,6 +41,7 @@ export default function Footer() {
                         <ul className="space-y-4 text-sm text-gray-600">
                             <li className="flex items-center gap-3"><i className="fas fa-envelope text-primary w-4"></i> infokreditrakyat@gmail.com</li>
                             <li className="flex items-center gap-3"><i className="fas fa-phone text-primary w-4"></i> +60 11-1334 3150</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-map-marker-alt text-primary w-4 mt-1"></i> <span className="leading-snug">Lot 3A-01A, Level 3A, Glo Damansara Shopping Mall,<br/>699, Jln Damansara, Taman Tun Dr Ismail,<br/>60000 Kuala Lumpur</span></li>
                         </ul>
                     </div>
                 </div>

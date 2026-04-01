@@ -100,7 +100,23 @@ const localBusinessJsonLd = {
     "https://www.linkedin.com/in/kredit-rakyat-aa3534237/",
     "https://www.facebook.com/profile.php?id=61578886204768",
     "https://www.tiktok.com/@kreditrakyatcom"
-  ]
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Lot 3A-01A, Level 3A, Glo Damansara Shopping Mall, 699, Jln Damansara, Taman Tun Dr Ismail",
+    "addressLocality": "Kuala Lumpur",
+    "addressRegion": "Wilayah Persekutuan Kuala Lumpur",
+    "postalCode": "60000",
+    "addressCountry": {
+      "@type": "Country",
+      "name": "MY"
+    }
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "3.13110",
+    "longitude": "101.62939"
+  }
 };
 
 export default function RootLayout({
