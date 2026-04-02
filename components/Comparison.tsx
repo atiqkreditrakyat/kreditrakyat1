@@ -42,8 +42,8 @@ export default function Comparison() {
                                 <td className="p-6 text-center text-gray-500">24 Jam</td>
                             </tr>
                             <tr className="hover:bg-gray-50/50 transition-colors">
-                                <th scope="row" className="p-6 font-semibold text-gray-700">Kadar Keuntungan</th>
-                                <td className="p-6 text-center border-x border-gray-100 font-bold text-gray-900 bg-primary/5">Serendah 2.99%</td>
+                                <th scope="row" className="p-6 font-semibold text-gray-700">Kadar Tetap</th>
+                                <td className="p-6 text-center border-x border-gray-100 font-bold text-gray-900 bg-primary/5">Serendah 3.5%</td>
                                 <td className="p-6 text-center text-gray-500">Dari 5.00%</td>
                                 <td className="p-6 text-center text-gray-500">Tertinggi (12%+)</td>
                             </tr>
