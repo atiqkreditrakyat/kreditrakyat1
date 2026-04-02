@@ -46,7 +46,7 @@ export default function TermsAndConditions() {
                         <section>
                             <h2 className="text-xl font-bold text-gray-900 mb-3">4. Tiada Caj Pendahuluan</h2>
                             <p>
-                                Kredit Rakyat dengan tegas menyatakan kami **TIDAK** akan meminta sebarang yuran 
+                                Kredit Rakyat dengan tegas menyatakan kami <strong>TIDAK</strong> akan meminta sebarang yuran 
                                 pendahuluan (Upfront Fees) daripada pelanggan. Sekiranya anda diminta membuat 
                                 bayaran oleh mana-mana pihak yang mendakwa sebagai wakil kami, sila laporkan 
                                 segera kepada kami.

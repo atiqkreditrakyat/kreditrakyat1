@@ -11,7 +11,7 @@ export default function About() {
                         Platform <span className="text-primary">One-Stop Center</span> untuk Penjawat Awam
                     </h2>
                     <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                        Kredit Rakyat adalah platform pembiayaan yang memberi peluang kepada kakitangan kerajaan dan ahli koperasi untuk mendapatkan dana tambahan dengan kadar faedah yang kompetitif.
+                        Kredit Rakyat adalah platform pembiayaan yang memberi peluang kepada kakitangan kerajaan dan ahli koperasi untuk mendapatkan dana tambahan dengan kadar tetap yang kompetitif.
                     </p>
                     <p className="text-gray-600 leading-relaxed mb-8">
                         Kami bekerjasama dengan <strong className="text-primary">10+ Koperasi dan Bank</strong> terkemuka untuk memberikan anda pilihan terbaik. Misi kami adalah untuk menyediakan pembiayaan yang <span className="font-semibold text-gray-900">Pantas, Selamat, dan Patuh Syariah</span>.

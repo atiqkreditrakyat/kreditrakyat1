@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
                         <section>
                             <h2 className="text-xl font-bold text-gray-900 mb-3">1. Pengenalan</h2>
                             <p>
-                                Rakyat Fintech Sdn. Bhd. ("Kredit Rakyat", "kami", "milik kami") amat menitikberatkan privasi anda. 
+                                Rakyat Fintech Sdn. Bhd. (&quot;Kredit Rakyat&quot;, &quot;kami&quot;, &quot;milik kami&quot;) amat menitikberatkan privasi anda. 
                                 Dasar Privasi ini menerangkan bagaimana kami mengumpul, menggunakan, mendedahkan, dan melindungi maklumat peribadi anda 
                                 selaras dengan Akta Perlindungan Data Peribadi 2010 (PDPA) di Malaysia.
                             </p>
