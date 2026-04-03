@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-const faqData = [
+const defaultFaqData = [
     { q: 'Adakah Kredit Rakyat berlesen?', a: 'Ya, Kredit Rakyat adalah platform pembiayaan berlesen yang beroperasi di bawah pengawasan Kementerian Kewangan Malaysia dan Bank Negara Malaysia. Kami bekerjasama dengan koperasi-koperasi berdaftar dan bank-bank terkemuka.' },
     { q: 'Berapa lama proses kelulusan?', a: 'Proses kelulusan mengambil masa <strong>2 hari bekerja (48 jam)</strong> sahaja untuk kebanyakan kes. Sekiranya dokumen lengkap diberikan, wang boleh dikreditkan ke akaun anda dalam masa yang singkat.' },
     { q: 'Adakah perlu penjamin atau cagaran?', a: 'Kebanyakan produk kami <strong>tidak memerlukan penjamin atau cagaran</strong>. Cukup dengan slip gaji terkini dan dokumen pengenalan sebagai bukti kelayakan.' },
@@ -10,7 +10,17 @@ const faqData = [
     { q: 'Adakah ada caj tersembunyi?', a: '<strong>Tiada caj tersembunyi.</strong> Perkhidmatan kami adalah 100% percuma. Tiada yuran pemprosesan, yuran pentadbiran atau sebarang bayaran pendahuluan dikenakan.' },
 ];
 
-export default function FAQ() {
+interface FAQProps {
+    badge?: string;
+    title?: string;
+    items?: Array<{ q: string; a: string }>;
+}
+
+export default function FAQ({
+    badge = "Soalan Lazim",
+    title = "Soalan Yang Sering Ditanya",
+    items = defaultFaqData
+}: FAQProps) {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
 
     const toggleFaq = (index: number) => {
@@ -20,7 +30,7 @@ export default function FAQ() {
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": faqData.map(faq => ({
+        "mainEntity": items.map(faq => ({
             "@type": "Question",
             "name": faq.q,
             "acceptedAnswer": {
@@ -42,7 +52,7 @@ export default function FAQ() {
                     <h2 className="font-display text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Soalan Yang Sering Ditanya</h2>
                 </div>
                 <div className="space-y-4">
-                    {faqData.map((faq, i) => (
+                    {items.map((faq, i) => (
                         <div key={i} className="bg-surface rounded-2xl border border-gray-100 overflow-hidden">
                             <button onClick={() => toggleFaq(i)} className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-white transition-colors group">
                                 <span className="font-bold text-gray-900 group-hover:text-primary transition-colors">{faq.q}</span>

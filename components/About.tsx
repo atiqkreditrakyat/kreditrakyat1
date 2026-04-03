@@ -1,20 +1,32 @@
 import React from "react";
 
-export default function About() {
+interface AboutProps {
+    badge?: string;
+    title?: string;
+    highlightedTitle?: string;
+    description1?: string;
+    description2?: string;
+}
+
+export default function About({
+    badge = "Tentang Kami",
+    title = "Platform",
+    highlightedTitle = "One-Stop Center",
+    description1 = "Kredit Rakyat adalah platform pembiayaan yang memberi peluang kepada kakitangan kerajaan dan ahli koperasi untuk mendapatkan dana tambahan dengan kadar tetap yang kompetitif.",
+    description2 = "Kami bekerjasama dengan 10+ Koperasi dan Bank terkemuka untuk memberikan anda pilihan terbaik. Misi kami adalah untuk menyediakan pembiayaan yang Pantas, Selamat, dan Patuh Syariah."
+}: AboutProps) {
     return (
         <section id="tentang" className="py-24 bg-surface relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-4xl mx-auto text-center" data-aos="fade-up">
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">Tentang Kami</span>
+                     <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">{badge}</span>
                     <h2 className="font-display text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                        Platform <span className="text-primary">One-Stop Center</span> untuk Penjawat Awam
+                        {title} <span className="text-primary">{highlightedTitle}</span> untuk Penjawat Awam
                     </h2>
-                    <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                        Kredit Rakyat adalah platform pembiayaan yang memberi peluang kepada kakitangan kerajaan dan ahli koperasi untuk mendapatkan dana tambahan dengan kadar tetap yang kompetitif.
+                    <p className="text-gray-600 text-lg leading-relaxed mb-6" dangerouslySetInnerHTML={{ __html: description1 }}>
                     </p>
-                    <p className="text-gray-600 leading-relaxed mb-8">
-                        Kami bekerjasama dengan <strong className="text-primary">10+ Koperasi dan Bank</strong> terkemuka untuk memberikan anda pilihan terbaik. Misi kami adalah untuk menyediakan pembiayaan yang <span className="font-semibold text-gray-900">Pantas, Selamat, dan Patuh Syariah</span>.
+                    <p className="text-gray-600 leading-relaxed mb-8" dangerouslySetInnerHTML={{ __html: description2 }}>
                     </p>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">

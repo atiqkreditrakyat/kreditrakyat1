@@ -1,12 +1,45 @@
-import { initPlasmicLoader } from "@plasmicapp/loader-nextjs/react-server";
+import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import FAQ from "./components/FAQ";
+
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
-      id: "5c7UXYbV5Fq3AcRH2ziLEz",  // ID of a project you are using
-      token: "ILuqSf1imewWvBEpiyaykmJCcxA5MK6F7rZBRMDCigqrxjV6E1NtfgN0GcYh8JodfNGSHYRluHlgjPLcsA"  // API token for that project
+      id: "5c7UXYbV5Fq3AcRH2ziLEz",
+      token: "ILuqSf1imewWvBEpiyaykmJCcxA5MK6F7rZBRMDCigqrxjV6E1NtfgN0GcYh8JodfNGSHYRluHlgjPLcsA"
     }
   ],
-  // Fetches the latest revisions, whether or not they were unpublished!
-  // Disable for production to ensure you render only published changes.
   preview: true,
-})
+});
+
+PLASMIC.registerComponent(Hero, {
+  name: "Hero",
+  props: {
+    badge: "string",
+    headline: "string",
+    highlightedText: "string",
+    subHeadline: "string",
+    description: "string"
+  }
+});
+
+PLASMIC.registerComponent(About, {
+  name: "About",
+  props: {
+    badge: "string",
+    title: "string",
+    highlightedTitle: "string",
+    description1: "string",
+    description2: "string"
+  }
+});
+
+PLASMIC.registerComponent(FAQ, {
+  name: "FAQ",
+  props: {
+    badge: "string",
+    title: "string",
+    items: "object"
+  }
+});

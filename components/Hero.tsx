@@ -4,11 +4,23 @@ import React, { useState, useEffect } from "react";
 
 interface HeroProps {
     onOpenModal: () => void;
+    badge?: string;
+    headline?: string;
+    subHeadline?: string;
+    highlightedText?: string;
+    description?: string;
 }
 
 declare const AOS: { init: (options?: Record<string, unknown>) => void };
 
-export default function Hero({ onOpenModal }: HeroProps) {
+export default function Hero({ 
+    onOpenModal,
+    badge = "10,000+ Kelulusan Berjaya • Kadar Serendah 3.5%",
+    headline = "Pembiayaan Koperasi",
+    subHeadline = "untuk Penjawat Awam",
+    highlightedText = "Patuh Syariah",
+    description = "Platform One-Stop Center yang membandingkan tawaran daripada 10+ Koperasi & Bank terkemuka. Kelulusan dalam 2 Hari Bekerja."
+}: HeroProps) {
     const [loanAmount, setLoanAmount] = useState(50000);
     const [displayAmount, setDisplayAmount] = useState("50,000");
     const [tenure, setTenure] = useState(5);
@@ -66,27 +78,23 @@ export default function Hero({ onOpenModal }: HeroProps) {
 
                     <div className="lg:col-span-12 text-center relative z-10" data-aos="fade-up">
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur border border-primary/20 text-primary text-xs font-semibold mb-6 shadow-sm">
-                            <span className="w-2 h-2 rounded-full bg-lime animate-pulse"></span>
-                            10,000+ Kelulusan Berjaya &bull; Kadar Serendah 3.5%
+                             <span className="w-2 h-2 rounded-full bg-lime animate-pulse"></span>
+                            {badge}
                         </div>
 
-                        <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight mb-6 max-w-5xl mx-auto">
-                            Pembiayaan Koperasi
-                            <span className="hero-gradient-text italic font-extrabold mx-2">Patuh Syariah</span>
+                         <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight mb-6 max-w-5xl mx-auto">
+                            {headline}
+                            <span className="hero-gradient-text italic font-extrabold mx-2">{highlightedText}</span>
                             <br className="hidden sm:block" />
-                            untuk
                             <span className="relative inline-block ml-2">
-                                <span className="relative z-10">Penjawat Awam</span>
+                                <span className="relative z-10">{subHeadline}</span>
                                 <svg className="absolute -bottom-2 left-0 w-full h-3 text-lime/40 -z-0" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2.00025 6.99997C25.7509 2.74999 86.6504 -3.29001 198.001 6.99997" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
                                 </svg>
                             </span>
                         </h1>
 
-                        <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto font-light">
-                            Platform <strong className="text-primary font-semibold">One-Stop Center</strong> yang membandingkan tawaran daripada
-                            <span className="text-gray-900 font-semibold mx-1">10+ Koperasi &amp; Bank</span> terkemuka.
-                            Kelulusan dalam <span className="bg-lime/30 px-2 py-0.5 rounded font-semibold text-primary">2 Hari Bekerja</span>.
+                        <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto font-light" dangerouslySetInnerHTML={{ __html: description }}>
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center">
