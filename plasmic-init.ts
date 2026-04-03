@@ -6,8 +6,8 @@ import FAQ from "./components/FAQ";
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
-      id: "5c7UXYbV5Fq3AcRH2ziLEz",
-      token: "ILuqSf1imewWvBEpiyaykmJCcxA5MK6F7rZBRMDCigqrxjV6E1NtfgN0GcYh8JodfNGSHYRluHlgjPLcsA"
+      id: "wbzrBSUp5WarDzzqKyUecH",
+      token: "0U1k2u4C781pkA1YyoiDawFL3lDxqJfMc8cLOeXtZ07gEixkfGoj1yTVkPYn8KLG1Q0QoZ3OADp8jzMTMjtA"
     }
   ],
   preview: true,
