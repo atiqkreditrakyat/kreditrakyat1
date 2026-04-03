@@ -1,6 +1,21 @@
 import Link from "next/link";
+interface FooterProps {
+    description?: string;
+    email?: string;
+    phone?: string;
+    address?: React.ReactNode;
+    disclaimer?: React.ReactNode;
+    copyrightText?: string;
+}
 
-export default function Footer() {
+export default function Footer({ 
+    description = "Platform pembiayaan pilihan penjawat awam Malaysia. Komited untuk memberikan perkhidmatan kewangan yang selamat, patuh syariah dan telus.",
+    email = "infokreditrakyat@gmail.com",
+    phone = "+60 11-1334 3150",
+    address = "Lot 3A-01A, Level 3A, Glo Damansara Shopping Mall, 699, Jln Damansara, Taman Tun Dr Ismail, 60000 Kuala Lumpur",
+    disclaimer = "Rakyat Fintech Sdn. Bhd. (202501018111 (1619525-V)) merupakan pengurus rasmi untuk pemasaran jenama Kredit Rakyat. Terma Pembiayaan: Tempoh bayaran balik dari 1 tahun (12 bulan) hingga 10 tahun (120 bulan). Kadar tetap bermula dari 3.5% dengan Kadar Peratusan Tahunan (APR) maksimum: 4.99% (tertakluk kepada kelulusan institusi kewangan). Contoh Pengiraan Representatif: Pembiayaan RM10,000 selama 12 bulan dengan kadar tetap 3.5% setahun. Jumlah bayaran balik: RM10,350. Bayaran bulanan: RM862.50. Polisi Telus: Rakyat Fintech Sdn. Bhd. adalah rakan pemasaran rasmi bagi koperasi dan institusi kewangan berlesen. Kami secara tegas TIDAK mengenakan sebarang wang pendahuluan (no upfront fees) atau caj pemprosesan sebelum pembiayaan diluluskan.",
+    copyrightText = "© 2026 Rakyat Fintech Sdn. Bhd. (202501018111 (1619525-V)). Hak Cipta Terpelihara."
+}: FooterProps) {
     return (
         <footer className="bg-gray-50 border-t border-gray-200 py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,25 +55,22 @@ export default function Footer() {
 
                     <div>
                         <h4 className="font-bold text-gray-900 mb-6">Hubungi</h4>
-                        <ul className="space-y-4 text-sm text-gray-600">
-                            <li className="flex items-center gap-3"><i className="fas fa-envelope text-primary w-4"></i> infokreditrakyat@gmail.com</li>
-                            <li className="flex items-center gap-3"><i className="fas fa-phone text-primary w-4"></i> +60 11-1334 3150</li>
-                            <li className="flex items-start gap-3"><i className="fas fa-map-marker-alt text-primary w-4 mt-1"></i> <span className="leading-snug">Lot 3A-01A, Level 3A, Glo Damansara Shopping Mall,<br/>699, Jln Damansara, Taman Tun Dr Ismail,<br/>60000 Kuala Lumpur</span></li>
+                         <ul className="space-y-4 text-sm text-gray-600">
+                            <li className="flex items-center gap-3"><i className="fas fa-envelope text-primary w-4"></i> {email}</li>
+                            <li className="flex items-center gap-3"><i className="fas fa-phone text-primary w-4"></i> {phone}</li>
+                            <li className="flex items-start gap-3"><i className="fas fa-map-marker-alt text-primary w-4 mt-1"></i> <span className="leading-snug">{address}</span></li>
                         </ul>
                     </div>
                 </div>
 
-                <div className="border-t border-gray-200 mt-8 pt-8 mb-8 text-xs text-gray-500 leading-relaxed text-justify">
+                 <div className="border-t border-gray-200 mt-8 pt-8 mb-8 text-xs text-gray-500 leading-relaxed text-justify">
                     <p>
-                        <strong>Rakyat Fintech Sdn. Bhd. (202501018111 (1619525-V))</strong> merupakan pengurus rasmi untuk pemasaran jenama Kredit Rakyat. 
-                        <strong> Terma Pembiayaan:</strong> Tempoh bayaran balik dari <strong>1 tahun (12 bulan) hingga 10 tahun (120 bulan)</strong>. Kadar tetap bermula dari <strong>3.5%</strong> dengan Kadar Peratusan Tahunan (APR) maksimum: <strong>4.99%</strong> (tertakluk kepada kelulusan institusi kewangan). 
-                        <strong> Contoh Pengiraan Representatif:</strong> Pembiayaan RM10,000 selama 12 bulan dengan kadar tetap 3.5% setahun. Jumlah bayaran balik: RM10,350. Bayaran bulanan: RM862.50.
-                        <strong> Polisi Telus:</strong> Rakyat Fintech Sdn. Bhd. adalah rakan pemasaran rasmi bagi koperasi dan institusi kewangan berlesen. Kami secara tegas <strong>TIDAK mengenakan sebarang wang pendahuluan</strong> (no upfront fees) atau caj pemprosesan sebelum pembiayaan diluluskan.
+                        {disclaimer}
                     </p>
                 </div>
 
-                <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-xs text-gray-500">&copy; 2026 Rakyat Fintech Sdn. Bhd. (202501018111 (1619525-V)). Hak Cipta Terpelihara.</p>
+                 <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p className="text-xs text-gray-500">{copyrightText}</p>
                     <div className="flex gap-6 text-xs text-gray-500">
                         <Link href="/dasar-privasi" className="hover:text-primary transition-colors">Dasar Privasi</Link>
                         <Link href="/terma-syarat" className="hover:text-primary transition-colors">Terma & Syarat</Link>

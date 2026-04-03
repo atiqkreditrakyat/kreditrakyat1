@@ -2,7 +2,7 @@
 
 import React, { useRef, useState, useEffect } from "react";
 
-const testimonials = [
+const defaultTestimonials = [
     { init: 'A', color: 'from-teal-500 to-teal-600', name: 'Ahmad bin Abdullah', job: 'Guru, SMK Kuala Lumpur', amount: 'RM50,000', review: 'Proses yang sangat pantas dan mudah. Saya memohon pada pagi Isnin dan wang sudah masuk akaun pada petang yang sama.', stars: 5 },
     { init: 'S', color: 'from-pink-500 to-pink-600', name: 'Siti Nurhaliza', job: 'Jururawat, HKL', amount: 'RM35,000', review: 'Saya ada masalah CTOS sedikit tapi Kredit Rakyat tetap bantu untuk mendapatkan kelulusan. Kadar yang ditawarkan juga lebih baik!', stars: 5 },
     { init: 'M', color: 'from-indigo-500 to-indigo-600', name: 'Muhammad Rizal', job: 'Pegawai, Kementerian', amount: 'RM80,000', review: 'Penyatuan hutang berjaya mengurangkan komitmen bulanan saya dari RM1,200 kepada RM800. Penjimatan yang besar!', stars: 5 },
@@ -11,7 +11,30 @@ const testimonials = [
     { init: 'Z', color: 'from-orange-500 to-orange-600', name: 'Zulkifli', job: 'Polis Bantuan, IPD', amount: 'RM120,000', review: 'Pembiayaan perumahan untuk program LPHS berjaya diluluskan dalam masa 2 hari. Staff sangat knowledgeable.', stars: 5 },
 ];
 
-export default function Testimonials() {
+const defaultStats = [
+    { label: 'Rating Purata', value: '4.9/5' },
+    { label: 'Pelanggan', value: '10,000+' },
+    { label: 'Kadar Kelulusan', value: '98%' },
+    { label: 'Masa Respons', value: '24 Jam' },
+];
+
+interface TestimonialsProps {
+    badge?: string;
+    title?: string;
+    highlightedTitle?: string;
+    description?: string;
+    stats?: Array<{ label: string; value: string }>;
+    items?: Array<{ init: string; color: string; name: string; job: string; amount: string; review: string; stars: number }>;
+}
+
+export default function Testimonials({
+    badge = "✨ Testimoni",
+    title = "Kepercayaan",
+    highlightedTitle = "Penjawat Awam",
+    description = "Lebih 10,000 pelanggan telah merasai perbezaan dengan Kredit Rakyat.",
+    stats = defaultStats,
+    items = defaultTestimonials
+}: TestimonialsProps) {
     const scrollRef = useRef<HTMLDivElement>(null);
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -24,7 +47,7 @@ export default function Testimonials() {
             const cardWidth = container.offsetWidth * 0.85;
             const gap = 24;
             const index = Math.round(scrollLeft / (cardWidth + gap));
-            setActiveIndex(Math.min(index, testimonials.length - 1));
+            setActiveIndex(Math.min(index, items.length - 1));
         };
 
         container.addEventListener('scroll', handleScroll, { passive: true });
@@ -47,25 +70,20 @@ export default function Testimonials() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <span className="inline-block px-4 py-1.5 rounded-full bg-lime/20 text-limeDark text-sm font-bold tracking-wide mb-4 border border-lime/30 shadow-sm">
-                        ✨ Testimoni
+                        {badge}
                     </span>
                     <h2 className="font-display text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-                        Kepercayaan <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-lime">Penjawat Awam</span>
+                        {title} <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-lime">{highlightedTitle}</span>
                     </h2>
                     <p className="text-gray-600 text-lg font-light">
-                        Lebih 10,000 pelanggan telah merasai perbezaan dengan Kredit Rakyat.
+                        {description}
                     </p>
                 </div>
 
                 {/* Stats Row */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 relative">
+                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 relative">
                     <div className="absolute inset-0 bg-white/40 backdrop-blur-3xl rounded-3xl -z-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white/50"></div>
-                    {[
-                        { label: 'Rating Purata', value: '4.9/5' },
-                        { label: 'Pelanggan', value: '10,000+' },
-                        { label: 'Kadar Kelulusan', value: '98%' },
-                        { label: 'Masa Respons', value: '24 Jam' },
-                    ].map((stat, i) => (
+                    {stats.map((stat, i) => (
                         <div key={i} className="p-6 text-center group">
                             <p className="text-3xl font-display font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">{stat.value}</p>
                             <p className="text-xs text-gray-500 mt-2 font-medium tracking-wide uppercase">{stat.label}</p>
@@ -82,7 +100,7 @@ export default function Testimonials() {
                         msOverflowStyle: 'none',
                     }}
                 >
-                    {testimonials.map((test, i) => (
+                    {items.map((test, i) => (
                         <div
                             key={i}
                             className="group relative flex-shrink-0 snap-start bg-white/70 backdrop-blur-xl rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white/60 hover:shadow-[0_20px_40px_rgba(13,148,136,0.1)] hover:-translate-y-1 transition-all duration-500"
@@ -127,7 +145,7 @@ export default function Testimonials() {
 
                 {/* Navigation Dots */}
                 <div className="flex justify-center gap-2 mt-2">
-                    {testimonials.map((_, i) => (
+                    {items.map((_, i) => (
                         <button
                             key={i}
                             onClick={() => scrollToIndex(i)}
