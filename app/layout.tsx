@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Kredit Rakyat | Pembiayaan Peribadi Koperasi Kerajaan",
         description: "Banding & mohon pembiayaan peribadi penjawat awam paling pantas & selamat di Malaysia. Kelulusan seawal 1 hari bekerja.",
-        url: "https://pinjamkerajaan.com.my",
+        url: "https://pinjamankerajaan.com.my",
         siteName: "Kredit Rakyat",
         images: [
             {
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
         description: "Platform pembiayaan peribadi penjawat awam terbaik di Malaysia. Patuh Syariah & Selamat.",
     },
     alternates: {
-        canonical: "https://pinjamkerajaan.com.my",
+        canonical: "https://pinjamankerajaan.com.my",
     }
 };
 
@@ -90,7 +90,7 @@ const localBusinessJsonLd = {
   "name": "Rakyat Fintech Sdn Bhd",
   "legalName": "Rakyat Fintech Sdn. Bhd. (202501018111 (1619525-V))",
   "taxID": "202501018111 (1619525-V)",
-  "url": "https://kreditrakyat.com/",
+  "url": "https://pinjamankerajaan.com.my/",
   "logo": "https://kreditrakyat.com/wp-content/uploads/2025/07/KR-Brand-Guideline-06-2048x495.png",
   "description": "Kakitangan kerajaan perlukan pembiayaan yang mudah? Kredit Rakyat tawarkan pembiayaan peribadi dari bank & koperasi dengan kelulusan cepat dalam 1 hari. Hubungi kami.",
   "telephone": "+60 11-1334 3150",
@@ -136,7 +136,7 @@ export default function RootLayout({
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                    })(window,document,'script','dataLayer','GTM-XXXXXX');`,
+                    })(window,document,'script','dataLayer','GTM-M6PRKV2W');`,
                     }}
                 />
                 {/* End Google Tag Manager */}
@@ -151,7 +151,7 @@ export default function RootLayout({
                 {/* Google Tag Manager (noscript) */}
                 <noscript>
                     <iframe
-                        src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
+                        src="https://www.googletagmanager.com/ns.html?id=GTM-M6PRKV2W"
                         height="0"
                         width="0"
                         style={{ display: "none", visibility: "hidden" }}
