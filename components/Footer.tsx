@@ -28,7 +28,7 @@ export default function Footer({
                         <div className="flex gap-3">
                             <a href="https://www.facebook.com/profile.php?id=61576572101049" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-600 hover:text-primary hover:shadow-md transition-all border border-gray-200"><i className="fab fa-facebook-f text-sm"></i></a>
                             <a href="https://www.instagram.com/kreditrakyat.my/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-600 hover:text-primary hover:shadow-md transition-all border border-gray-200"><i className="fab fa-instagram text-sm"></i></a>
-                            <a href="https://wa.me/601113343150?text=Hi,%20saya%20berminat%20untuk%20mengetahui%20maklumat%20berkaitan%20pinjaman%20koperasi." target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-[#25D366] rounded-full flex items-center justify-center text-white hover:shadow-md transition-all"><i className="fab fa-whatsapp text-sm"></i></a>
+                            <a href="https://wa.me/601113343150?text=Hi%20Kredit%20Rakyat%2C%20saya%20ingin%20semak%20kelayakan%20pinjaman%20koperasi" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-[#25D366] rounded-full flex items-center justify-center text-white hover:shadow-md transition-all"><i className="fab fa-whatsapp text-sm"></i></a>
                         </div>
                     </div>
 

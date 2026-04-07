@@ -102,10 +102,10 @@ export default function Hero({
                                 <span>Semak Kelayakan Percuma</span>
                                 <i className="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                             </button>
-                            <button onClick={() => document.getElementById('proses')?.scrollIntoView({ behavior: 'smooth' })} className="btn-secondary text-gray-700 px-8 py-4 rounded-full font-semibold text-base flex items-center justify-center gap-2">
-                                <i className="fas fa-play-circle text-primary"></i>
-                                <span>Info Lanjut</span>
-                            </button>
+                            <a href="https://wa.me/601113343150?text=Hi%20Kredit%20Rakyat%2C%20saya%20ingin%20semak%20kelayakan%20pinjaman%20koperasi" target="_blank" rel="noopener noreferrer" className="btn-secondary text-gray-700 px-8 py-4 rounded-full font-semibold text-base flex items-center justify-center gap-2 bg-white border border-gray-200 hover:border-green-500 hover:text-green-600 transition-all">
+                                <i className="fab fa-whatsapp text-green-500 text-lg"></i>
+                                <span>WhatsApp Kami</span>
+                            </a>
                         </div>
 
                         <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-gray-500 mb-12">

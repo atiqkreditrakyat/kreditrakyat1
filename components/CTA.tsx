@@ -42,7 +42,7 @@ export default function CTA({
                         <span>{primaryButtonText}</span>
                         <i className="fas fa-arrow-right"></i>
                     </button>
-                    <a href={`https://wa.me/${whatsappNumber}`} target="_blank" className="px-10 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl">
+                    <a href={`https://wa.me/${whatsappNumber}?text=Hi%20Kredit%20Rakyat%2C%20saya%20ingin%20semak%20kelayakan%20pinjaman%20koperasi`} target="_blank" className="px-10 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white shadow-lg hover:shadow-xl">
                         <i className="fab fa-whatsapp text-xl"></i> {whatsappButtonText}
                     </a>
                 </div>
