@@ -20,7 +20,7 @@ export default function Footer({
         <footer className="bg-gray-50 border-t border-gray-200 py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-4 gap-12 mb-12">
-                    <div className="col-span-2 md:col-span-1">
+                    <div>
                         <div className="flex items-center gap-2 mb-6">
                             <img src={process.env.NODE_ENV === 'production' ? '/kreditrakyat1/logo.png' : '/logo.png'} alt="Kredit Rakyat" className="h-10 w-auto object-contain" />
                         </div>
